@@ -3,7 +3,7 @@
 
 bool is_palindrome(std::string s)
 {
-    if( equal(s.begin(), s.begin() + s.size()/2, s.rbegin()) )
+    if (equal(s.begin(), s.begin() + s.size()/2, s.rbegin()) )
         return true;
     else
         false;
@@ -20,13 +20,11 @@ int main()
         {
             int tmp = a*b;
             if (is_palindrome(std::to_string(tmp)) && tmp > large_pal)
-            {
                 large_pal = tmp;
-            }
             b--;
         }
         a--;
     }
-    std:: cout << large_pal;
+    std::cout << large_pal << std::endl;
     return 0;
 }
